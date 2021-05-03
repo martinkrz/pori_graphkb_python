@@ -7,16 +7,16 @@ provided by the GraphKB API.
 
 ## Definitions
 
-The entire knowledge base is defined as the graph
+The entire knowledge base is the graph `G` comprising the set of vertices `V` and set of edges `E`.
 
 $$
 G = (V, E)
 $$
 
-Below, subsets of Edges by their `@class` attribute are denoted as follows
+Edges are associated with a `@class` attribute and we write the subset of edges of a given `class` as
 
 $$
-E_{<class>} = \{e: e \in E, e.class = \text{<class>} \}
+E(class) = \{e: e \in E, e.\text{class} = class \}
 $$
 
 The edges are divided into two main groups for expansion: equivalency ($E_{eq}$)
